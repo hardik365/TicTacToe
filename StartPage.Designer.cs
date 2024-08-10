@@ -39,7 +39,7 @@
             // StartButton
             // 
             StartButton.Location = new Point(323, 349);
-            StartButton.Margin = new Padding(5, 5, 5, 5);
+            StartButton.Margin = new Padding(5);
             StartButton.Name = "StartButton";
             StartButton.Size = new Size(153, 46);
             StartButton.TabIndex = 0;
@@ -49,7 +49,7 @@
             // Player1Box
             // 
             Player1Box.Location = new Point(299, 195);
-            Player1Box.Margin = new Padding(5, 5, 5, 5);
+            Player1Box.Margin = new Padding(5);
             Player1Box.Name = "Player1Box";
             Player1Box.Size = new Size(201, 39);
             Player1Box.TabIndex = 1;
@@ -57,7 +57,7 @@
             // Player2Box
             // 
             Player2Box.Location = new Point(299, 296);
-            Player2Box.Margin = new Padding(5, 5, 5, 5);
+            Player2Box.Margin = new Padding(5);
             Player2Box.Name = "Player2Box";
             Player2Box.Size = new Size(201, 39);
             Player2Box.TabIndex = 2;
@@ -97,7 +97,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Maroon;
+            BackColor = Color.FromArgb(255, 192, 128);
             ClientSize = new Size(798, 552);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -105,7 +105,7 @@
             Controls.Add(Player2Box);
             Controls.Add(Player1Box);
             Controls.Add(StartButton);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "Form1";
             Text = "Tic-Tac-Toe";
             ResumeLayout(false);

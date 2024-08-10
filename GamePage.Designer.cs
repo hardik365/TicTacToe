@@ -53,7 +53,7 @@
             // 
             // ExitButton
             // 
-            ExitButton.Location = new Point(25, 23);
+            ExitButton.Location = new Point(637, 895);
             ExitButton.Margin = new Padding(5);
             ExitButton.Name = "ExitButton";
             ExitButton.Size = new Size(153, 46);
@@ -68,7 +68,6 @@
             TopLeft.Size = new Size(250, 250);
             TopLeft.TabIndex = 1;
             TopLeft.TabStop = false;
-            //TopLeft.Click += TopLeft_Click;
             // 
             // TopRight
             // 
@@ -80,17 +79,17 @@
             // 
             // TopCenter
             // 
-            TopCenter.Location = new Point(311, 335);
+            TopCenter.Location = new Point(600, 55);
             TopCenter.Name = "TopCenter";
-            TopCenter.Size = new Size(250, 234);
+            TopCenter.Size = new Size(230, 250);
             TopCenter.TabIndex = 3;
             TopCenter.TabStop = false;
             // 
             // MiddleLeft
             // 
-            MiddleLeft.Location = new Point(600, 55);
+            MiddleLeft.Location = new Point(311, 335);
             MiddleLeft.Name = "MiddleLeft";
-            MiddleLeft.Size = new Size(225, 250);
+            MiddleLeft.Size = new Size(250, 234);
             MiddleLeft.TabIndex = 4;
             MiddleLeft.TabStop = false;
             // 
@@ -130,7 +129,7 @@
             // 
             BottomRight.Location = new Point(863, 605);
             BottomRight.Name = "BottomRight";
-            BottomRight.Size = new Size(260, 250);
+            BottomRight.Size = new Size(246, 250);
             BottomRight.TabIndex = 9;
             BottomRight.TabStop = false;
             // 
@@ -139,7 +138,7 @@
             pictureBox1.Image = Properties.Resources.Canvas1;
             pictureBox1.Location = new Point(311, 55);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(808, 800);
+            pictureBox1.Size = new Size(798, 800);
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
             // 
@@ -147,8 +146,8 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Maroon;
-            ClientSize = new Size(1430, 911);
+            BackColor = Color.FromArgb(255, 192, 128);
+            ClientSize = new Size(1430, 979);
             Controls.Add(BottomRight);
             Controls.Add(BottomCenter);
             Controls.Add(BottomLeft);
