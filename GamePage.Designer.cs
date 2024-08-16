@@ -40,7 +40,8 @@
             BottomRight = new PictureBox();
             pictureBox1 = new PictureBox();
             Player1Name = new Label();
-            Playe2Name = new Label();
+            Player2Name = new Label();
+            Clear = new Button();
             ((System.ComponentModel.ISupportInitialize)TopLeft).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TopRight).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TopCenter).BeginInit();
@@ -73,19 +74,19 @@
             // 
             // TopRight
             // 
-            TopRight.Location = new Point(613, 144);
+            TopRight.Location = new Point(609, 144);
             TopRight.Margin = new Padding(2);
             TopRight.Name = "TopRight";
-            TopRight.Size = new Size(148, 156);
+            TopRight.Size = new Size(152, 156);
             TopRight.TabIndex = 2;
             TopRight.TabStop = false;
             // 
             // TopCenter
             // 
-            TopCenter.Location = new Point(447, 144);
+            TopCenter.Location = new Point(442, 144);
             TopCenter.Margin = new Padding(2);
             TopCenter.Name = "TopCenter";
-            TopCenter.Size = new Size(142, 156);
+            TopCenter.Size = new Size(147, 156);
             TopCenter.TabIndex = 3;
             TopCenter.TabStop = false;
             // 
@@ -100,10 +101,10 @@
             // 
             // MiddleCenter
             // 
-            MiddleCenter.Location = new Point(447, 319);
+            MiddleCenter.Location = new Point(442, 319);
             MiddleCenter.Margin = new Padding(2);
             MiddleCenter.Name = "MiddleCenter";
-            MiddleCenter.Size = new Size(142, 146);
+            MiddleCenter.Size = new Size(147, 146);
             MiddleCenter.TabIndex = 5;
             MiddleCenter.TabStop = false;
             // 
@@ -112,7 +113,7 @@
             MiddleRight.Location = new Point(609, 319);
             MiddleRight.Margin = new Padding(2);
             MiddleRight.Name = "MiddleRight";
-            MiddleRight.Size = new Size(152, 140);
+            MiddleRight.Size = new Size(152, 146);
             MiddleRight.TabIndex = 6;
             MiddleRight.TabStop = false;
             // 
@@ -163,16 +164,28 @@
             Player1Name.Size = new Size(235, 46);
             Player1Name.TabIndex = 11;
             Player1Name.Text = "Player 1 Name";
+            Player1Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // Playe2Name
+            // Player2Name
             // 
-            Playe2Name.AutoSize = true;
-            Playe2Name.Font = new Font("Segoe UI", 20F);
-            Playe2Name.Location = new Point(685, 61);
-            Playe2Name.Name = "Playe2Name";
-            Playe2Name.Size = new Size(235, 46);
-            Playe2Name.TabIndex = 12;
-            Playe2Name.Text = "Player 2 Name";
+            Player2Name.AutoSize = true;
+            Player2Name.Font = new Font("Segoe UI", 20F);
+            Player2Name.Location = new Point(685, 61);
+            Player2Name.Name = "Player2Name";
+            Player2Name.Size = new Size(235, 46);
+            Player2Name.TabIndex = 12;
+            Player2Name.Text = "Player 2 Name";
+            Player2Name.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // Clear
+            // 
+            Clear.Location = new Point(849, 223);
+            Clear.Name = "Clear";
+            Clear.Size = new Size(94, 29);
+            Clear.TabIndex = 13;
+            Clear.Text = "Clear";
+            Clear.UseVisualStyleBackColor = true;
+            Clear.Click += Clear_Click;
             // 
             // GamePage
             // 
@@ -180,7 +193,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 128);
             ClientSize = new Size(1055, 772);
-            Controls.Add(Playe2Name);
+            Controls.Add(Clear);
+            Controls.Add(Player2Name);
             Controls.Add(Player1Name);
             Controls.Add(BottomRight);
             Controls.Add(BottomCenter);
@@ -223,6 +237,7 @@
         private PictureBox BottomRight;
         private PictureBox pictureBox1;
         private Label Player1Name;
-        private Label Playe2Name;
+        private Label Player2Name;
+        private Button Clear;
     }
 }
