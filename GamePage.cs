@@ -343,6 +343,8 @@ namespace TicTacToe
                 MessageBox.Show("Player 1 wins!");
             }
 
+            Clear.PerformClick();
+
         }
 
         private void Clear_Click(object sender, EventArgs e)
