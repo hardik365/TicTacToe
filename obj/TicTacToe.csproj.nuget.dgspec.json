@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hardi\\Documents\\Fun Projects\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {}
+    "C:\\Users\\hardi\\Documents\\School\\Repos\\TicTacToe\\TicTacToe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hardi\\Documents\\Fun Projects\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+    "C:\\Users\\hardi\\Documents\\School\\Repos\\TicTacToe\\TicTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hardi\\Documents\\Fun Projects\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "projectUniqueName": "C:\\Users\\hardi\\Documents\\School\\Repos\\TicTacToe\\TicTacToe.csproj",
         "projectName": "TicTacToe",
-        "projectPath": "C:\\Users\\hardi\\Documents\\Fun Projects\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "projectPath": "C:\\Users\\hardi\\Documents\\School\\Repos\\TicTacToe\\TicTacToe.csproj",
         "packagesPath": "C:\\Users\\hardi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hardi\\Documents\\Fun Projects\\TicTacToe\\TicTacToe\\obj\\",
+        "outputPath": "C:\\Users\\hardi\\Documents\\School\\Repos\\TicTacToe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -63,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

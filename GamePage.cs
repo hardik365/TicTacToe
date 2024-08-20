@@ -297,50 +297,62 @@ namespace TicTacToe
             if (grid[0, 0] == 0 && grid[0, 1] == 0 && grid[0, 2] == 0)
             {
                 MessageBox.Show("Player 1 wins!");
+                Clear.PerformClick();
             }
             else if (grid[1, 0] == 0 && grid[1, 1] == 0 && grid[1, 2] == 0)
             {
                 MessageBox.Show("Player 1 wins!");
+                Clear.PerformClick();
             }
             else if (grid[2, 0] == 0 && grid[2, 1] == 0 && grid[2, 2] == 0)
             {
                 MessageBox.Show("Player 1 wins!");
+                Clear.PerformClick();
             }
             else if (grid[0, 0] == 0 && grid[1, 1] == 0 && grid[2, 2] == 0)
             {
                 MessageBox.Show("Player 1 wins!");
+                Clear.PerformClick();
             }
             else if (grid[0, 2] == 0 && grid[1, 1] == 0 && grid[2, 0] == 0)
             {
                 MessageBox.Show("Player 1 wins!");
+                Clear.PerformClick();
             }
             else if (grid[0, 0] == 0 && grid[1, 0] == 0 && grid[2, 0] == 0)
             {
                 MessageBox.Show("Player 1 wins!");
+                Clear.PerformClick();
             }
             else if (grid[0, 1] == 0 && grid[1, 1] == 0 && grid[2, 1] == 0)
             {
                 MessageBox.Show("Player 1 wins!");
+                Clear.PerformClick();
             }
             else if (grid[0, 2] == 0 && grid[1, 2] == 0 && grid[2, 2] == 0)
             {
                 MessageBox.Show("Player 1 wins!");
+                Clear.PerformClick();
             }
             else if (grid[0, 0] == 1 && grid[0, 1] == 1 && grid[0, 2] == 1)
             {
                 MessageBox.Show("Player 2 wins!");
+                Clear.PerformClick();
             }
             else if (grid[1, 0] == 1 && grid[1, 1] == 1 && grid[1, 2] == 1)
             {
                 MessageBox.Show("Player 2 wins!");
+                Clear.PerformClick();
             }
             else if (grid[2, 0] == 1 && grid[2, 1] == 1 && grid[2, 2] == 1)
             {
                 MessageBox.Show("Player 2 wins!");
+                Clear.PerformClick();
             }
             if (grid[0, 0] == 0 && grid[1, 0] == 0 && grid[2, 0] == 0)
             {
                 MessageBox.Show("Player 1 wins!");
+                Clear.PerformClick();
             }
 
         }
@@ -369,7 +381,7 @@ namespace TicTacToe
             MiddleCenter.Enabled = true;
             MiddleRight.Enabled = true;
 
-            BottomCenter.Enabled = true;
+            BottomLeft.Enabled = true;
             BottomCenter.Enabled = true;
             BottomRight.Enabled = true;
 
