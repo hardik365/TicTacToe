@@ -42,6 +42,9 @@
             Player1Name = new Label();
             Player2Name = new Label();
             Clear = new Button();
+            p1wins = new Label();
+            p2wins = new Label();
+            turnLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)TopLeft).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TopRight).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TopCenter).BeginInit();
@@ -56,7 +59,7 @@
             // 
             // ExitButton
             // 
-            ExitButton.Location = new Point(470, 669);
+            ExitButton.Location = new Point(470, 762);
             ExitButton.Name = "ExitButton";
             ExitButton.Size = new Size(94, 29);
             ExitButton.TabIndex = 0;
@@ -65,7 +68,7 @@
             // 
             // TopLeft
             // 
-            TopLeft.Location = new Point(269, 144);
+            TopLeft.Location = new Point(269, 237);
             TopLeft.Margin = new Padding(2);
             TopLeft.Name = "TopLeft";
             TopLeft.Size = new Size(154, 156);
@@ -74,7 +77,7 @@
             // 
             // TopRight
             // 
-            TopRight.Location = new Point(609, 144);
+            TopRight.Location = new Point(609, 237);
             TopRight.Margin = new Padding(2);
             TopRight.Name = "TopRight";
             TopRight.Size = new Size(152, 156);
@@ -83,7 +86,7 @@
             // 
             // TopCenter
             // 
-            TopCenter.Location = new Point(442, 144);
+            TopCenter.Location = new Point(442, 237);
             TopCenter.Margin = new Padding(2);
             TopCenter.Name = "TopCenter";
             TopCenter.Size = new Size(147, 156);
@@ -92,7 +95,7 @@
             // 
             // MiddleLeft
             // 
-            MiddleLeft.Location = new Point(269, 319);
+            MiddleLeft.Location = new Point(269, 412);
             MiddleLeft.Margin = new Padding(2);
             MiddleLeft.Name = "MiddleLeft";
             MiddleLeft.Size = new Size(154, 146);
@@ -101,7 +104,7 @@
             // 
             // MiddleCenter
             // 
-            MiddleCenter.Location = new Point(442, 319);
+            MiddleCenter.Location = new Point(442, 412);
             MiddleCenter.Margin = new Padding(2);
             MiddleCenter.Name = "MiddleCenter";
             MiddleCenter.Size = new Size(147, 146);
@@ -110,7 +113,7 @@
             // 
             // MiddleRight
             // 
-            MiddleRight.Location = new Point(609, 319);
+            MiddleRight.Location = new Point(609, 412);
             MiddleRight.Margin = new Padding(2);
             MiddleRight.Name = "MiddleRight";
             MiddleRight.Size = new Size(152, 146);
@@ -119,7 +122,7 @@
             // 
             // BottomLeft
             // 
-            BottomLeft.Location = new Point(269, 493);
+            BottomLeft.Location = new Point(269, 586);
             BottomLeft.Margin = new Padding(2);
             BottomLeft.Name = "BottomLeft";
             BottomLeft.Size = new Size(154, 151);
@@ -128,7 +131,7 @@
             // 
             // BottomCenter
             // 
-            BottomCenter.Location = new Point(447, 488);
+            BottomCenter.Location = new Point(447, 581);
             BottomCenter.Margin = new Padding(2);
             BottomCenter.Name = "BottomCenter";
             BottomCenter.Size = new Size(142, 156);
@@ -137,7 +140,7 @@
             // 
             // BottomRight
             // 
-            BottomRight.Location = new Point(609, 488);
+            BottomRight.Location = new Point(609, 581);
             BottomRight.Margin = new Padding(2);
             BottomRight.Name = "BottomRight";
             BottomRight.Size = new Size(151, 156);
@@ -148,7 +151,7 @@
             // 
             pictureBox1.BackgroundImage = Properties.Resources.Canvas;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(269, 144);
+            pictureBox1.Location = new Point(269, 237);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(491, 500);
@@ -159,7 +162,7 @@
             // 
             Player1Name.AutoSize = true;
             Player1Name.Font = new Font("Segoe UI", 20F);
-            Player1Name.Location = new Point(138, 61);
+            Player1Name.Location = new Point(136, 5);
             Player1Name.Name = "Player1Name";
             Player1Name.Size = new Size(235, 46);
             Player1Name.TabIndex = 11;
@@ -170,7 +173,7 @@
             // 
             Player2Name.AutoSize = true;
             Player2Name.Font = new Font("Segoe UI", 20F);
-            Player2Name.Location = new Point(685, 61);
+            Player2Name.Location = new Point(683, 5);
             Player2Name.Name = "Player2Name";
             Player2Name.Size = new Size(235, 46);
             Player2Name.TabIndex = 12;
@@ -179,7 +182,7 @@
             // 
             // Clear
             // 
-            Clear.Location = new Point(849, 223);
+            Clear.Location = new Point(849, 316);
             Clear.Name = "Clear";
             Clear.Size = new Size(94, 29);
             Clear.TabIndex = 13;
@@ -187,12 +190,46 @@
             Clear.UseVisualStyleBackColor = true;
             Clear.Click += Clear_Click;
             // 
+            // p1wins
+            // 
+            p1wins.AutoSize = true;
+            p1wins.Font = new Font("Segoe UI", 15F);
+            p1wins.Location = new Point(207, 56);
+            p1wins.Name = "p1wins";
+            p1wins.Size = new Size(89, 35);
+            p1wins.TabIndex = 14;
+            p1wins.Text = "0 Wins";
+            // 
+            // p2wins
+            // 
+            p2wins.AutoSize = true;
+            p2wins.Font = new Font("Segoe UI", 15F);
+            p2wins.Location = new Point(762, 56);
+            p2wins.Name = "p2wins";
+            p2wins.Size = new Size(89, 35);
+            p2wins.TabIndex = 15;
+            p2wins.Text = "0 Wins";
+            // 
+            // turnLabel
+            // 
+            turnLabel.AutoSize = true;
+            turnLabel.Font = new Font("Segoe UI", 20F);
+            turnLabel.Location = new Point(471, 101);
+            turnLabel.Name = "turnLabel";
+            turnLabel.Size = new Size(113, 46);
+            turnLabel.TabIndex = 16;
+            turnLabel.Text = "s' turn";
+            turnLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // GamePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 128);
-            ClientSize = new Size(1055, 772);
+            ClientSize = new Size(1055, 857);
+            Controls.Add(turnLabel);
+            Controls.Add(p2wins);
+            Controls.Add(p1wins);
             Controls.Add(Clear);
             Controls.Add(Player2Name);
             Controls.Add(Player1Name);
@@ -239,5 +276,8 @@
         private Label Player1Name;
         private Label Player2Name;
         private Button Clear;
+        private Label p1wins;
+        private Label p2wins;
+        private Label turnLabel;
     }
 }

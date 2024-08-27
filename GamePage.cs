@@ -291,47 +291,55 @@ namespace TicTacToe
 
 
 
-
+        //To see if we have a winner or not
         private void checkWin()
         {
             if (grid[0, 0] == 0 && grid[0, 1] == 0 && grid[0, 2] == 0)      //  0|0|0
             {                                                               //   | |
                 MessageBox.Show("Player 1 wins!");                          //   | |
+                player1Wins++;
                 Clear.PerformClick();
             }
             else if (grid[1, 0] == 0 && grid[1, 1] == 0 && grid[1, 2] == 0) //  | |
             {                                                               // 0|0|0
                 MessageBox.Show("Player 1 wins!");                          //  | |
+                player1Wins++;
                 Clear.PerformClick();
             }
             else if (grid[2, 0] == 0 && grid[2, 1] == 0 && grid[2, 2] == 0) //  | |
             {                                                               //  | |
                 MessageBox.Show("Player 1 wins!");                          // 0|0|0
+                player1Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 0] == 0 && grid[1, 1] == 0 && grid[2, 2] == 0) // 0| |
             {                                                               //  |0|
                 MessageBox.Show("Player 1 wins!");                          //  | |0
+                player1Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 2] == 0 && grid[1, 1] == 0 && grid[2, 0] == 0) //  | |0
             {                                                               //  |0|
                 MessageBox.Show("Player 1 wins!");                          // 0| |
+                player1Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 0] == 0 && grid[1, 0] == 0 && grid[2, 0] == 0) // 0| |
             {                                                               // 0| |
                 MessageBox.Show("Player 1 wins!");                          // 0| |
+                player1Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 1] == 0 && grid[1, 1] == 0 && grid[2, 1] == 0) //  |0|
             {                                                               //  |0|
                 MessageBox.Show("Player 1 wins!");                          //  |0|
+                player1Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 2] == 0 && grid[1, 2] == 0 && grid[2, 2] == 0) //  | |0
             {                                                               //  | |0
                 MessageBox.Show("Player 1 wins!");                          //  | |0
+                player1Wins++;
                 Clear.PerformClick();
             }
 
@@ -339,43 +347,54 @@ namespace TicTacToe
             else if (grid[0, 0] == 1 && grid[0, 1] == 1 && grid[0, 2] == 1) //  X|X|X
             {                                                               //   | |
                 MessageBox.Show("Player 2 wins!");                          //   | |
+                player2Wins++;
                 Clear.PerformClick();
             }
             else if (grid[1, 0] == 1 && grid[1, 1] == 1 && grid[1, 2] == 1) //  | |
             {                                                               // X|X|X
                 MessageBox.Show("Player 2 wins!");                          //  | |
+                player2Wins++;
                 Clear.PerformClick();
             }
             else if (grid[2, 0] == 1 && grid[2, 1] == 1 && grid[2, 2] == 1) //  | |
             {                                                               //  | |
                 MessageBox.Show("Player 2 wins!");                          // X|X|X
+                player2Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 0] == 1 && grid[1, 1] == 1 && grid[2, 2] == 1) // X| |
             {                                                               //  |X|
                 MessageBox.Show("Player 2 wins!");                          //  | |X
+                player2Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 2] == 1 && grid[1, 1] == 1 && grid[2, 0] == 1) //  | |X
             {                                                               //  |X|
                 MessageBox.Show("Player 2 wins!");                          // X| |
+                player2Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 0] == 1 && grid[1, 0] == 1 && grid[2, 0] == 1) // X| |
             {                                                               // X| |
                 MessageBox.Show("Player 2 wins!");                          // X| |
+                player2Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 1] == 1 && grid[1, 1] == 1 && grid[2, 1] == 1) //  |X|
             {                                                               //  |X|
                 MessageBox.Show("Player 2 wins!");                          //  |X|
+                player2Wins++;
                 Clear.PerformClick();
             }
             else if (grid[0, 2] == 1 && grid[1, 2] == 1 && grid[2, 2] == 1) //  | |X
             {                                                               //  | |X
                 MessageBox.Show("Player 2 wins!");                          //  | |X
+                player2Wins++;
                 Clear.PerformClick();
             }
+
+            p1wins.Text = player1Wins.ToString() + " wins";
+            p2wins.Text = player2Wins.ToString() +  " wins";
         }
 
         private void Clear_Click(object sender, EventArgs e)
@@ -392,6 +411,8 @@ namespace TicTacToe
             BottomLeft.Image = null;
             BottomCenter.Image = null;
             BottomRight.Image = null;
+
+            fillGrid();
 
             //enable the buttons
             TopLeft.Enabled = true;
