@@ -30,7 +30,7 @@ namespace TicTacToe
 
             if (string.IsNullOrWhiteSpace(Player1Name) || string.IsNullOrWhiteSpace(Player2Name))
             {
-                MessageBox.Show("Please enter both player names.");
+                MessageBox.Show("Please enter both players' names.");
                 return;
             }
             else {

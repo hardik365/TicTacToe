@@ -15,6 +15,7 @@ namespace TicTacToe
     {
         //keeps track of whose turn it is, O or X (0 or 1)
         private int turn = 0;
+        
 
         //path to our images
         private string crossPath = "cross.png";
@@ -37,6 +38,7 @@ namespace TicTacToe
             //Show the player names
             Player1Name.Text = Form1.Player1Name;
             Player2Name.Text = Form1.Player2Name;
+            turnLabel.Text = Player1Name.Text + "'s turn";
 
             //gameclicks
             TopLeft.Click += TopLeft_Click;
@@ -101,6 +103,7 @@ namespace TicTacToe
                 TopLeft.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[0, 0] = 1;
                 turn = 0;
+                turnLabel.Text = Player1Name.Text + "'s turn";
             }
             else //turn == 0
             {
@@ -108,6 +111,7 @@ namespace TicTacToe
                 TopLeft.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[0, 0] = 0;
                 turn = 1;
+                turnLabel.Text = Player2Name.Text + "'s turn";
             }
             checkWin();
             TopLeft.Enabled = false;//so you can't click again   
@@ -122,6 +126,7 @@ namespace TicTacToe
                 TopCenter.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[0, 1] = 1;
                 turn = 0;
+                turnLabel.Text = Player1Name.Text + "'s turn";
             }
             else
             {
@@ -129,6 +134,7 @@ namespace TicTacToe
                 TopCenter.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[0, 1] = 0;
                 turn = 1;
+                turnLabel.Text = Player2Name.Text + "'s turn";
             }
             checkWin();
             TopCenter.Enabled = false;//so you can't click again
@@ -144,6 +150,7 @@ namespace TicTacToe
                 TopRight.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[0, 2] = 1;
                 turn = 0;
+                turnLabel.Text = Player1Name.Text + "'s turn";
             }
             else
             {
@@ -151,6 +158,7 @@ namespace TicTacToe
                 TopRight.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[0, 2] = 0;
                 turn = 1;
+                turnLabel.Text = Player2Name.Text + "'s turn";
             }
             checkWin();
             TopRight.Enabled = false;//so you can't click again   
@@ -166,6 +174,7 @@ namespace TicTacToe
                 MiddleLeft.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[1, 0] = 1;
                 turn = 0;
+                turnLabel.Text = Player1Name.Text + "'s turn";
             }
             else
             {
@@ -173,6 +182,7 @@ namespace TicTacToe
                 MiddleLeft.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[1, 0] = 0;
                 turn = 1;
+                turnLabel.Text = Player2Name.Text + "'s turn";
             }
             checkWin();
             MiddleLeft.Enabled = false;//so you can't click again   
@@ -188,6 +198,7 @@ namespace TicTacToe
                 MiddleCenter.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[1, 1] = 1;
                 turn = 0;
+                turnLabel.Text = Player1Name.Text + "'s turn";
             }
             else
             {
@@ -195,6 +206,7 @@ namespace TicTacToe
                 MiddleCenter.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[1, 1] = 0;
                 turn = 1;
+                turnLabel.Text = Player2Name.Text + "'s turn";
             }
             checkWin();
             MiddleCenter.Enabled = false;//so you can't click again   
@@ -210,6 +222,7 @@ namespace TicTacToe
                 MiddleRight.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[1, 2] = 1;
                 turn = 0;
+                turnLabel.Text = Player1Name.Text + "'s turn";
             }
             else
             {
@@ -217,6 +230,7 @@ namespace TicTacToe
                 MiddleRight.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[1, 2] = 0;
                 turn = 1;
+                turnLabel.Text = Player2Name.Text + "'s turn";
             }
             checkWin();
             MiddleRight.Enabled = false;//so you can't click again   
@@ -232,6 +246,7 @@ namespace TicTacToe
                 BottomLeft.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[2, 0] = 1;
                 turn = 0;
+                turnLabel.Text = Player1Name.Text + "'s turn";
             }
             else
             {
@@ -239,6 +254,8 @@ namespace TicTacToe
                 BottomLeft.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[2, 0] = 0;
                 turn = 1;
+                ;
+                turnLabel.Text = Player2Name.Text + "'s turn";
             }
             checkWin();
             BottomLeft.Enabled = false;//so you can't click again   
@@ -254,6 +271,7 @@ namespace TicTacToe
                 BottomCenter.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[2, 1] = 1;
                 turn = 0;
+                turnLabel.Text = Player1Name.Text + "'s turn";
             }
             else
             {
@@ -261,6 +279,7 @@ namespace TicTacToe
                 BottomCenter.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[2, 1] = 0;
                 turn = 1;
+                turnLabel.Text = Player2Name.Text + "'s turn";
             }
             checkWin();
             BottomCenter.Enabled = false;//so you can't click again   
@@ -276,6 +295,7 @@ namespace TicTacToe
                 BottomRight.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[2, 2] = 1;
                 turn = 0;
+                turnLabel.Text = Player1Name.Text + "'s turn";
             }
             else
             {
@@ -283,6 +303,7 @@ namespace TicTacToe
                 BottomRight.SizeMode = PictureBoxSizeMode.StretchImage;
                 grid[2, 2] = 0;
                 turn = 1;
+                turnLabel.Text = Player2Name.Text + "'s turn";
             }
             checkWin();
             BottomRight.Enabled = false;//so you can't click again   
@@ -390,6 +411,12 @@ namespace TicTacToe
             {                                                               //  | |X
                 MessageBox.Show("Player 2 wins!");                          //  | |X
                 player2Wins++;
+                Clear.PerformClick();
+            }
+
+            if (grid[0, 0] != 9 && grid[0, 1] != 9 && grid[0, 2] != 9 && grid[1, 0] != 9 && grid[1, 1] != 9 && grid[1, 2] != 9 && grid[2, 0] != 9 && grid[2, 1] != 9 && grid[2, 2] != 9)
+            {
+                MessageBox.Show("It's a tie!");
                 Clear.PerformClick();
             }
 
